@@ -50,6 +50,7 @@
       "order": 25
     },
     "AdminPanel_Zastech": {
+      "hidden": true,
       "title": {
         "en": "ZAS Tech Resident Admin",
         "ku": "پانێڵی بەڕێوەبردنی دانیشتووانی ZAS Tech"
