@@ -1,0 +1,4 @@
+{
+  // .work/ holds throwaway clones used for building; keep them out of Source Control
+  "git.repositoryScanIgnoredFolders": [".work", "node_modules"]
+}
