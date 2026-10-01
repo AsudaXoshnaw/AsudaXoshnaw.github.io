@@ -1,6 +1,6 @@
-name: Rebuild showcase
+name: Update showcase
 
-# Rebuilds every day so new repos, commits and screenshots appear on their own,
+# Re-reads the repo list every day so new projects appear on their own,
 # then publishes site/ to the gh-pages branch.
 on:
   push:
@@ -17,11 +17,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
     env:
-      # Fine-grained personal access token with read-only "Contents" + "Metadata" on all your repos.
+      # Fine-grained personal access token with read-only "Metadata" on all your repos,
+      # so private repos are listed too (their code is never read).
       # Settings → Secrets and variables → Actions → New repository secret → SHOWCASE_TOKEN
       GH_TOKEN: ${{ secrets.SHOWCASE_TOKEN }}
       GH_OWNER: ${{ github.repository_owner }}
@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Check SHOWCASE_TOKEN
         if: env.GH_TOKEN == ''
-        run: echo "::warning::Add the SHOWCASE_TOKEN secret (see README) — skipping the rebuild until then."
+        run: echo "::warning::Add the SHOWCASE_TOKEN secret (see README) — skipping the update until then."
 
       - uses: actions/checkout@v4
         if: env.GH_TOKEN != ''
@@ -40,31 +40,9 @@ jobs:
         with:
           node-version: 22
 
-      - name: Cache npm downloads
-        if: env.GH_TOKEN != ''
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: npm-${{ runner.os }}-${{ github.run_id }}
-          restore-keys: npm-${{ runner.os }}-
-
-      - name: Install tools
-        if: env.GH_TOKEN != ''
-        run: |
-          npm ci
-          npx playwright install --with-deps chromium
-
       - name: Sync GitHub data
         if: env.GH_TOKEN != ''
         run: node scripts/sync-github.mjs
-
-      - name: Build live demos
-        if: env.GH_TOKEN != ''
-        run: node scripts/build-demos.mjs
-
-      - name: Take screenshots
-        if: env.GH_TOKEN != ''
-        run: node scripts/screenshots.mjs
 
       - name: Publish to gh-pages
         if: env.GH_TOKEN != ''
