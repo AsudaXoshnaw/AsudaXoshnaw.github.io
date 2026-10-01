@@ -234,20 +234,7 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
 .techs li::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--c); }
 @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
 
-/* ---------- contact ---------- */
-.contact { padding-bottom: 96px; }
-.contact-title { max-width: 16ch; }
-.contact-title em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--accent-text); }
-:root[dir='rtl'] .contact-title em { font-family: var(--font-ku); font-style: normal; font-weight: 800; }
-.contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
-.contact-links a {
-  display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; border-radius: 16px;
-  border: 1px solid var(--line); background: var(--surface); font-weight: 500; transition: border-color .2s, transform .2s;
-}
-.contact-links a:hover { border-color: var(--accent); transform: translateY(-2px); }
-.contact-links a.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-.contact-links .fill { fill: currentColor; stroke: none; }
-
+#work { padding-bottom: 96px; }
 .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 28px 0 40px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 
 /* ---------- responsive ---------- */

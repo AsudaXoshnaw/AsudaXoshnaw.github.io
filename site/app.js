@@ -2,20 +2,16 @@
 //   data/github.json     — repos synced from GitHub (scripts/sync-github.mjs)
 //   content/projects.json — project names and categories
 //   content/figma.json    — Figma design names
-//   content/site.json     — profile and contact links
+//   content/site.json     — site name
 
 const I18N = {
   en: {
-    'nav.work': 'Work', 'nav.contact': 'Contact', 'lang.switch': 'کوردی',
+    'nav.work': 'Work', 'lang.switch': 'کوردی',
     'work.title': 'Projects', builtWith: 'Built with', all: 'All',
-    'contact.t1': 'Have a project in mind?', 'contact.t2': 'Let’s build it.',
-    email: 'Email me',
   },
   ku: {
-    'nav.work': 'کارەکان', 'nav.contact': 'پەیوەندی', 'lang.switch': 'English',
+    'nav.work': 'کارەکان', 'lang.switch': 'English',
     'work.title': 'پرۆجێکتەکان', builtWith: 'دروستکراوە بە', all: 'هەمووی',
-    'contact.t1': 'بیرۆکەی پرۆجێکتێکت هەیە؟', 'contact.t2': 'با دروستی بکەین.',
-    email: 'ئیمەیڵم بۆ بنێرە',
   },
 };
 
@@ -222,22 +218,11 @@ function renderIndex() {
     </section>`).join('');
 }
 
-function renderContact() {
-  const l = DATA.site.links || {};
-  const items = [];
-  if (l.email) items.push(`<a class="primary" href="mailto:${esc(l.email)}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>${esc(t('email'))}</a>`);
-  if (l.github) items.push(`<a href="${esc(l.github)}" target="_blank" rel="noopener"><svg class="fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a>`);
-  if (l.linkedin) items.push(`<a href="${esc(l.linkedin)}" target="_blank" rel="noopener"><svg class="fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5z"/></svg>LinkedIn</a>`);
-  if (l.x) items.push(`<a href="${esc(l.x)}" target="_blank" rel="noopener"><svg class="fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.2 2.3h3.4l-7.4 8.4 8.7 11.5h-6.8l-5.3-7-6.1 7H1.3l7.9-9L.9 2.3h7l4.8 6.3 5.5-6.3zm-1.2 17.9h1.9L7 4.2H5z"/></svg>X</a>`);
-  $('#contactLinks').innerHTML = items.join('');
-}
-
 function renderAll() {
   applyI18n();
   renderProfile();
   renderFilters();
   renderIndex();
-  renderContact();
 }
 
 $('#filters').addEventListener('click', (e) => {
