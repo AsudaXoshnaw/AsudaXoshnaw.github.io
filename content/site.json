@@ -1,0 +1,22 @@
+{
+  "name": "ZAS-TECH COMPANY",
+  "role": {
+    "en": "Full-Stack Developer & UI/UX Designer",
+    "ku": "گەشەپێدەری Full-Stack و دیزاینەری UI/UX"
+  },
+  "bio": {
+    "en": "I design and build modern web apps, dashboards and mobile products with React, TypeScript, Node.js and AI-powered features. Founder at Promodex.",
+    "ku": "وێب ئەپ، داشبۆرد و بەرهەمی مۆبایل دیزاین و دروست دەکەم بە React، TypeScript، Node.js و تایبەتمەندی زیرەکی دەستکرد. دامەزرێنەری Promodex."
+  },
+  "location": {
+    "en": "Shaqlawa, Kurdistan Region, Iraq",
+    "ku": "شەقڵاوە، هەرێمی کوردستان، عێراق"
+  },
+  "available": true,
+  "links": {
+    "github": "https://github.com/AsudaXoshnaw",
+    "linkedin": "https://www.linkedin.com/in/asuda-yaseen-203296371/",
+    "x": "https://x.com/XoshnawAsu56632",
+    "email": ""
+  }
+}

@@ -1,0 +1,622 @@
+{
+  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, desc {en, ku} (one short sentence), category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden. Projects that are not on GitHub go in \"extra\" with the same fields, plus image (a path to an icon picture), repo (GitHub link) and private (true/false).",
+  "projects": {
+    "AsudaXoshnaw": {
+      "hidden": true
+    },
+    "assss": {
+      "hidden": true
+    },
+    "-Web-Vulnerability-Scanner": {
+      "hidden": true
+    },
+    "system-doctors-zas-tech": {
+      "title": {
+        "en": "ZAS Tech Clinic — Practice Management",
+        "ku": "ZAS Tech Clinic — سیستەمی بەڕێوەبردنی کلینیک"
+      },
+      "desc": {
+        "en": "Clinic management system for patients, appointments, lab tests and finance — on web and desktop.",
+        "ku": "سیستەمی بەڕێوەبردنی کلینیک بۆ نەخۆش، ژوان، تاقیکردنەوە و دارایی — لەسەر وێب و دێسکتۆپ."
+      },
+      "category": "system",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
+      "icon": "stethoscope",
+      "tags": [
+        "React 19",
+        "TypeScript",
+        "Supabase",
+        "Tauri",
+        "Tailwind"
+      ],
+      "order": 1
+    },
+    "APP_CITY_ZAS_TECH": {
+      "title": {
+        "en": "ZAS Tech Smart Community",
+        "ku": "ZAS Tech — ئەپی کۆمەڵگەی زیرەک"
+      },
+      "desc": {
+        "en": "Residential-community app for bills, maintenance, guests and internet, with an admin panel.",
+        "ku": "ئەپی کۆمەڵگەی نیشتەجێبوون بۆ وەسڵ، چاککردنەوە، میوان و ئینتەرنێت، لەگەڵ پانێڵی بەڕێوەبردن."
+      },
+      "category": "mobile",
+      "platforms": [
+        "mobile",
+        "web"
+      ],
+      "icon": "building",
+      "tags": [
+        "React 19",
+        "TypeScript",
+        "React Native",
+        "Tailwind"
+      ],
+      "order": 25
+    },
+    "AdminPanel_Zastech": {
+      "hidden": true,
+      "title": {
+        "en": "ZAS Tech Resident Admin",
+        "ku": "پانێڵی بەڕێوەبردنی دانیشتووانی ZAS Tech"
+      },
+      "category": "system",
+      "platforms": [
+        "web"
+      ],
+      "icon": "dashboard",
+      "tags": [
+        "React",
+        "Firebase",
+        "Cloud Functions",
+        "Vite"
+      ],
+      "order": 3
+    },
+    "hajmari-mn": {
+      "title": {
+        "en": "Hajmari Mn — Installment Marketplace",
+        "ku": "هەژماری من — بازاڕی قیست"
+      },
+      "desc": {
+        "en": "Iraqi installment-shopping marketplace with customer, merchant, admin and finance portals.",
+        "ku": "بازاڕی کڕین بە قیست بۆ عێراق، بە پۆرتاڵی کڕیار، بازرگان، ئەدمین و دارایی."
+      },
+      "category": "webapp",
+      "platforms": [
+        "web"
+      ],
+      "icon": "cart",
+      "tags": [
+        "React",
+        "Recharts",
+        "Tailwind",
+        "React Router"
+      ],
+      "order": 4
+    },
+    "dr_junaid_new_web_saystem": {
+      "title": {
+        "en": "E-Clinic",
+        "ku": "کلینیکی ئەلیکترۆنی"
+      },
+      "desc": {
+        "en": "Arabic and English clinic web app for bookings and patient records.",
+        "ku": "وێب ئەپی کلینیک بە عەرەبی و ئینگلیزی بۆ ژوان و تۆماری نەخۆشەکان."
+      },
+      "category": "system",
+      "platforms": [
+        "web"
+      ],
+      "icon": "clinic",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Zustand",
+        "Recharts"
+      ],
+      "order": 5
+    },
+    "sultanmwzafaradminpanel": {
+      "title": {
+        "en": "Employee Management System",
+        "ku": "سیستەمی بەڕێوەبردنی کارمەندان"
+      },
+      "desc": {
+        "en": "Arabic dashboard for managing employees and their daily attendance.",
+        "ku": "داشبۆردێکی عەرەبی بۆ بەڕێوەبردنی کارمەندان و ئامادەبوونی ڕۆژانەیان."
+      },
+      "category": "system",
+      "platforms": [
+        "web"
+      ],
+      "icon": "users",
+      "tags": [
+        "Next.js",
+        "React 19",
+        "TypeScript"
+      ],
+      "order": 6
+    },
+    "datashowads": {
+      "hidden": true,
+      "title": {
+        "en": "Saryas Ads Analyzer",
+        "ku": "شیکاری ڕیکلامی ساریاس"
+      },
+      "category": "webapp",
+      "platforms": [
+        "web"
+      ],
+      "icon": "chart",
+      "tags": [
+        "React",
+        "PDF.js",
+        "jsPDF",
+        "Vite"
+      ],
+      "order": 7
+    },
+    "list-compamyes": {
+      "title": {
+        "en": "Erbil Chamber Company Directory",
+        "ku": "ڕێبەری کۆمپانیاکانی ئەنجوومەنی بازرگانی هەولێر"
+      },
+      "desc": {
+        "en": "Searchable directory of every company in the Erbil Chamber of Commerce.",
+        "ku": "ڕێبەرێکی گەڕان بۆ هەموو کۆمپانیاکانی ئەنجوومەنی بازرگانی هەولێر."
+      },
+      "category": "webapp",
+      "platforms": [
+        "web"
+      ],
+      "icon": "directory",
+      "tags": [
+        "Node.js",
+        "Express",
+        "Cheerio",
+        "Scraping"
+      ],
+      "order": 8
+    },
+    "Gelato-Application": {
+      "title": {
+        "en": "Gelato IQ — Self-Service Kiosk",
+        "ku": "Gelato IQ — کیۆسکی داواکاری خۆیی"
+      },
+      "desc": {
+        "en": "Touchscreen self-ordering kiosk for an ice-cream shop, in Kurdish, Arabic and English.",
+        "ku": "کیۆسکی داواکردن بە شاشەی دەستلێدان بۆ دوکانی ئایسکریم، بە کوردی، عەرەبی و ئینگلیزی."
+      },
+      "category": "webapp",
+      "platforms": [
+        "kiosk"
+      ],
+      "icon": "icecream",
+      "tags": [
+        "JavaScript",
+        "Kiosk UI",
+        "i18n",
+        "SVG"
+      ],
+      "order": 9
+    },
+    "pubg-tournament-web-main": {
+      "hidden": true,
+      "title": {
+        "en": "PUBG Arena — Tournament Platform",
+        "ku": "PUBG Arena — پلاتفۆرمی پاڵەوانێتی"
+      },
+      "category": "webapp",
+      "platforms": [
+        "web"
+      ],
+      "icon": "trophy",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Express",
+        "Prisma"
+      ],
+      "order": 10
+    },
+    "zastech-website-last-update-new": {
+      "title": {
+        "en": "ZAS Tech — Company Website",
+        "ku": "ZAS Tech — ماڵپەڕی کۆمپانیا"
+      },
+      "desc": {
+        "en": "Company website for ZAS Tech IT solutions, with an animated 3D hero.",
+        "ku": "ماڵپەڕی کۆمپانیای ZAS Tech بۆ چارەسەرەکانی IT، لەگەڵ دیمەنی سێ ڕەهەندی ئەنیمەیشندار."
+      },
+      "category": "website",
+      "icon": "network",
+      "tags": [
+        "React",
+        "Three.js",
+        "GSAP",
+        "Framer Motion"
+      ],
+      "order": 11
+    },
+    "promodex": {
+      "hidden": true,
+      "title": {
+        "en": "Promodex Studio",
+        "ku": "Promodex Studio"
+      },
+      "category": "website",
+      "icon": "sparkles",
+      "tags": [
+        "React",
+        "Three.js",
+        "GSAP",
+        "Tailwind"
+      ],
+      "order": 12
+    },
+    "asudaxoshnawsaryas": {
+      "hidden": true,
+      "title": {
+        "en": "Promodex Agency — Next.js",
+        "ku": "Promodex Agency — Next.js"
+      },
+      "category": "website",
+      "icon": "rocket",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "GSAP",
+        "Framer Motion"
+      ],
+      "order": 13
+    },
+    "promodex-web": {
+      "hidden": true,
+      "title": {
+        "en": "Promodex — Landing",
+        "ku": "Promodex — پەڕەی سەرەکی"
+      },
+      "category": "website",
+      "icon": "layout",
+      "tags": [
+        "React",
+        "Tailwind v4",
+        "React Router"
+      ],
+      "order": 14
+    },
+    "karzan-car": {
+      "title": {
+        "en": "Karzan Insurance",
+        "ku": "بیمەی کارزان"
+      },
+      "desc": {
+        "en": "UK vehicle-insurance website with an online quote request form.",
+        "ku": "ماڵپەڕی بیمەی ئۆتۆمبێل بۆ بەریتانیا، لەگەڵ فۆڕمی داواکردنی نرخ."
+      },
+      "category": "website",
+      "icon": "car",
+      "tags": [
+        "React",
+        "Tailwind",
+        "EmailJS"
+      ],
+      "order": 15
+    },
+    "FuratReklam": {
+      "hidden": true,
+      "title": {
+        "en": "Furat Modern Printing",
+        "ku": "چاپخانەی فورات"
+      },
+      "category": "website",
+      "icon": "printer",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "order": 16
+    },
+    "inzza": {
+      "title": {
+        "en": "INZZA",
+        "ku": "INZZA"
+      },
+      "desc": {
+        "en": "Product pages for INZZA IPL hair-removal devices.",
+        "ku": "پەڕەکانی ناساندنی ئامێرەکانی لابردنی مووی INZZA."
+      },
+      "category": "website",
+      "icon": "sparkle-device",
+      "tags": [
+        "HTML",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "order": 17
+    },
+    "alpess": {
+      "title": {
+        "en": "Alpees Global Trade",
+        "ku": "Alpees — بازرگانی نێودەوڵەتی"
+      },
+      "desc": {
+        "en": "Company website for an international trading partner.",
+        "ku": "ماڵپەڕی کۆمپانیایەکی بازرگانی نێودەوڵەتی."
+      },
+      "category": "website",
+      "icon": "ship",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "order": 18
+    },
+    "sidadamrican": {
+      "title": {
+        "en": "American Lube Trading",
+        "ku": "American Lube Trading"
+      },
+      "desc": {
+        "en": "Website for a lubricants trading company, with a product catalogue and enquiry forms.",
+        "ku": "ماڵپەڕی کۆمپانیایەکی بازرگانی ڕۆن، لەگەڵ کاتالۆگی بەرهەم و فۆڕمی پرسیار."
+      },
+      "category": "website",
+      "icon": "droplet",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
+      ],
+      "order": 19
+    },
+    "sidadamricanaricanlub": {
+      "hidden": true,
+      "title": {
+        "en": "American Lube Trading — v2",
+        "ku": "American Lube Trading — وەشانی ٢"
+      },
+      "category": "website",
+      "icon": "droplet",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
+      ],
+      "order": 20
+    },
+    "web-asuda": {
+      "hidden": true,
+      "title": {
+        "en": "Portfolio — 2026",
+        "ku": "پۆرتفۆلیۆ — ٢٠٢٦"
+      },
+      "category": "website",
+      "icon": "user",
+      "tags": [
+        "React",
+        "GSAP",
+        "Framer Motion"
+      ],
+      "order": 21
+    },
+    "asuda-portfolio": {
+      "hidden": true,
+      "title": {
+        "en": "Portfolio — 3D Edition",
+        "ku": "پۆرتفۆلیۆ — وەشانی سێ ڕەهەندی"
+      },
+      "category": "website",
+      "icon": "cube",
+      "tags": [
+        "React",
+        "Three.js",
+        "shadcn/ui",
+        "Lenis"
+      ],
+      "order": 22
+    },
+    "portfolio-asuda": {
+      "hidden": true,
+      "title": {
+        "en": "Portfolio — Next.js Edition",
+        "ku": "پۆرتفۆلیۆ — وەشانی Next.js"
+      },
+      "category": "website",
+      "icon": "user",
+      "tags": [
+        "Next.js",
+        "Three.js",
+        "Lottie",
+        "Swiper"
+      ],
+      "order": 23
+    },
+    "propoasl-match-perfume": {
+      "hidden": true,
+      "title": {
+        "en": "Match Perfumes — Technical Proposal",
+        "ku": "Match Perfumes — پێشنیاری تەکنیکی"
+      },
+      "category": "proposal",
+      "icon": "perfume",
+      "tags": [
+        "HTML",
+        "Architecture",
+        "Proposal"
+      ],
+      "order": 24
+    },
+    "promodex-proposal": {
+      "hidden": true,
+      "title": {
+        "en": "Promodex — Client Proposal",
+        "ku": "Promodex — پێشنیاری کڕیار"
+      },
+      "category": "proposal",
+      "icon": "doc",
+      "tags": [
+        "React",
+        "Framer Motion",
+        "html2pdf"
+      ],
+      "order": 25
+    },
+    "package-taybat": {
+      "hidden": true,
+      "title": {
+        "en": "Taybat — 30-Day Work Package",
+        "ku": "تەیبەت — پاکێجی کاری ٣٠ ڕۆژ"
+      },
+      "category": "proposal",
+      "icon": "package",
+      "tags": [
+        "React",
+        "Framer Motion",
+        "PDF"
+      ],
+      "order": 26
+    },
+    "ZAS-EDUCATION": {
+      "title": {
+        "en": "EduNova 2.0",
+        "ku": "EduNova 2.0"
+      },
+      "desc": {
+        "en": "Education app for Android and iOS with offline storage, camera and printing.",
+        "ku": "ئەپی پەروەردەیی بۆ ئەندرۆید و iOS، لەگەڵ هەڵگرتنی ئۆفلاین، کامێرا و چاپ."
+      },
+      "category": "mobile",
+      "platforms": [
+        "mobile"
+      ],
+      "icon": "graduation",
+      "tags": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "SQLite"
+      ],
+      "order": 27
+    },
+    "edu-nova": {
+      "hidden": true,
+      "title": {
+        "en": "EduNova — Flutter",
+        "ku": "EduNova — Flutter"
+      },
+      "category": "mobile",
+      "platforms": [
+        "mobile",
+        "desktop"
+      ],
+      "icon": "graduation",
+      "tags": [
+        "Flutter",
+        "Dart"
+      ],
+      "order": 28
+    }
+  },
+  "extra": [
+    {
+      "title": {
+        "en": "Kurdern",
+        "ku": "کوردێرن"
+      },
+      "category": "mobile",
+      "platforms": [
+        "mobile"
+      ],
+      "image": "content/img/kurdern.png",
+      "tags": [
+        "Flutter",
+        "Dart"
+      ],
+      "order": 26,
+      "desc": {
+        "en": "Quiz app with timed question-and-answer games and a prize for each winner.",
+        "ku": "ئەپی یاری پرسیار و وەڵام لە کاتی دیاریکراودا، بە خەڵات بۆ براوەی هەر یارییەک."
+      }
+    },
+    {
+      "title": {
+        "en": "Discount Card",
+        "ku": "کارتی داشکاندن"
+      },
+      "category": "mobile",
+      "platforms": [
+        "mobile"
+      ],
+      "icon": "discount",
+      "tags": [
+        "Flutter",
+        "Dart"
+      ],
+      "order": 26,
+      "desc": {
+        "en": "Discount-card app for members to get offers on their purchases.",
+        "ku": "ئەپی کارتی داشکاندن بۆ ئەوەی ئەندامان داشکاندن لەسەر کڕینەکانیان وەربگرن."
+      }
+    },
+    {
+      "title": {
+        "en": "Alshurooq Accounting",
+        "ku": "سیستەمی ژمێریاری الشروق"
+      },
+      "desc": {
+        "en": "Offline double-entry accounting desktop app for Iraq, with IQD/USD journals, trial balance and audit history.",
+        "ku": "ئەپی ژمێریاری دێسکتۆپ بۆ عێراق کە بێ ئینتەرنێت کار دەکات، بە تۆماری دینار و دۆلار، تەرازووی پێداچوونەوە و مێژووی وردبینی."
+      },
+      "category": "system",
+      "platforms": [
+        "desktop"
+      ],
+      "icon": "calculator",
+      "tags": [
+        "C#",
+        ".NET 10",
+        "WPF",
+        "EF Core",
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "repo": "https://github.com/zringmustafa-jpg/accounting-project",
+      "private": true,
+      "order": 2
+    },
+    {
+      "title": {
+        "en": "Zanist Campus — The Intelligent University",
+        "ku": "زانیست کامپەس — زانکۆی زیرەک"
+      },
+      "desc": {
+        "en": "University management platform for campuses, faculties and departments, with role-based access for every unit.",
+        "ku": "پلاتفۆرمی بەڕێوەبردنی زانکۆ بۆ کامپەس، کۆلێژ و بەشەکان، بە دەسەڵاتی جیاواز بۆ هەر ڕۆڵ و یەکەیەک."
+      },
+      "category": "system",
+      "platforms": [
+        "web"
+      ],
+      "icon": "university",
+      "tags": [
+        "React",
+        "Vite",
+        "Node.js",
+        "Fastify",
+        "PostgreSQL"
+      ],
+      "repo": "https://github.com/zringmustafa-jpg/zanist-campus-the-intelligent-university",
+      "private": true,
+      "order": 3
+    }
+  ]
+}

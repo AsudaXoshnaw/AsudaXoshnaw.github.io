@@ -1,0 +1,614 @@
+{
+  "generatedAt": "2026-10-01T01:37:07.228Z",
+  "user": {
+    "login": "AsudaXoshnaw",
+    "name": "Asuda",
+    "bio": "Full-Stack Developer building modern web applications with React, TypeScript, Node.js, APIs, databases, and AI-powered features. Founder at Promodex. Open to fr",
+    "avatar": "https://avatars.githubusercontent.com/u/68468721?v=4",
+    "location": "Shaqlawa, Kurdistan Region, Iraq",
+    "htmlUrl": "https://github.com/AsudaXoshnaw"
+  },
+  "repos": [
+    {
+      "name": "AsudaXoshnaw.github.io",
+      "private": false,
+      "url": "https://github.com/AsudaXoshnaw/AsudaXoshnaw.github.io",
+      "description": "Portfolio — everything Asuda Yaseen has built",
+      "homepage": "",
+      "language": null,
+      "languages": {},
+      "topics": [],
+      "stars": 0,
+      "empty": true,
+      "createdAt": "2026-10-01T01:48:52Z",
+      "pushedAt": "2026-10-01T01:48:53Z",
+      "commits": 0
+    },
+    {
+      "name": "AsudaXoshnaw",
+      "private": false,
+      "url": "https://github.com/AsudaXoshnaw/AsudaXoshnaw",
+      "description": "Profile README for Asuda Yaseen — Full-Stack Developer and AI builder.",
+      "homepage": "",
+      "language": null,
+      "languages": {},
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-09-17T13:17:26Z",
+      "pushedAt": "2026-09-30T04:16:33Z",
+      "commits": 6
+    },
+    {
+      "name": "ZAS-EDUCATION",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 371036,
+        "JavaScript": 236
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-09-27T19:22:25Z",
+      "pushedAt": "2026-09-28T04:52:58Z",
+      "commits": 2
+    },
+    {
+      "name": "APP_CITY_ZAS_TECH",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 787423,
+        "Kotlin": 4344,
+        "CSS": 1539,
+        "HTML": 666
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-10T01:57:15Z",
+      "pushedAt": "2026-09-27T06:44:57Z",
+      "commits": 24
+    },
+    {
+      "name": "Gelato-Application",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 141104,
+        "CSS": 52998,
+        "HTML": 1248
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-09-26T02:58:36Z",
+      "pushedAt": "2026-09-26T20:07:56Z",
+      "commits": 3
+    },
+    {
+      "name": "edu-nova",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "Dart",
+      "languages": {
+        "Dart": 579517,
+        "JavaScript": 264116,
+        "C++": 26110,
+        "CMake": 19841,
+        "Swift": 2817,
+        "HTML": 1521,
+        "C": 1488,
+        "Kotlin": 122,
+        "Objective-C": 38
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-21T20:05:21Z",
+      "pushedAt": "2026-09-26T20:01:59Z",
+      "commits": 21
+    },
+    {
+      "name": "FuratReklam",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "languages": {
+        "HTML": 85362,
+        "CSS": 60011,
+        "JavaScript": 46044
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-09-25T01:24:04Z",
+      "pushedAt": "2026-09-25T18:21:29Z",
+      "commits": 7
+    },
+    {
+      "name": "AdminPanel_Zastech",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 257174,
+        "CSS": 33509,
+        "HTML": 1657
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-11T03:04:13Z",
+      "pushedAt": "2026-09-18T17:13:55Z",
+      "commits": 13
+    },
+    {
+      "name": "inzza",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "languages": {
+        "HTML": 138767,
+        "CSS": 16292,
+        "JavaScript": 5349
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-06-04T04:06:18Z",
+      "pushedAt": "2026-09-17T12:38:02Z",
+      "commits": 10
+    },
+    {
+      "name": "list-compamyes",
+      "private": false,
+      "url": "https://github.com/AsudaXoshnaw/list-compamyes",
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 26948,
+        "HTML": 3269
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-09-16T14:39:22Z",
+      "pushedAt": "2026-09-16T16:00:23Z",
+      "commits": 10
+    },
+    {
+      "name": "system-doctors-zas-tech",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 438210,
+        "JavaScript": 2108,
+        "CSS": 968,
+        "HTML": 680,
+        "Rust": 403
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-09-11T18:31:31Z",
+      "pushedAt": "2026-09-12T17:14:34Z",
+      "commits": 10
+    },
+    {
+      "name": "hajmari-mn",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 576039,
+        "CSS": 1465,
+        "HTML": 758
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-09-10T05:17:15Z",
+      "pushedAt": "2026-09-10T13:58:17Z",
+      "commits": 12
+    },
+    {
+      "name": "-Web-Vulnerability-Scanner",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": null,
+      "languages": {},
+      "topics": [],
+      "stars": 0,
+      "empty": true,
+      "createdAt": "2026-04-14T04:24:54Z",
+      "pushedAt": "2026-08-30T16:07:08Z",
+      "commits": 1
+    },
+    {
+      "name": "sultanmwzafaradminpanel",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 26896,
+        "JavaScript": 559
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-26T02:05:29Z",
+      "pushedAt": "2026-08-26T09:26:42Z",
+      "commits": 4
+    },
+    {
+      "name": "propoasl-match-perfume",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "languages": {
+        "HTML": 82323
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-24T15:28:02Z",
+      "pushedAt": "2026-08-24T15:41:28Z",
+      "commits": 3
+    },
+    {
+      "name": "alpess",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "languages": {
+        "HTML": 49814,
+        "CSS": 13361,
+        "JavaScript": 10382
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-22T10:33:11Z",
+      "pushedAt": "2026-08-22T10:33:16Z",
+      "commits": 1
+    },
+    {
+      "name": "dr_junaid_new_web_saystem",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 79505,
+        "HTML": 689,
+        "CSS": 365
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-18T22:19:23Z",
+      "pushedAt": "2026-08-18T22:34:32Z",
+      "commits": 2
+    },
+    {
+      "name": "zastech-website-last-update-new",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 126886,
+        "CSS": 5871,
+        "HTML": 2000
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-08-09T04:13:39Z",
+      "pushedAt": "2026-08-11T17:00:06Z",
+      "commits": 5
+    },
+    {
+      "name": "karzan-car",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 88174,
+        "CSS": 7883,
+        "HTML": 2029
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-03-30T05:06:52Z",
+      "pushedAt": "2026-07-28T18:23:09Z",
+      "commits": 76
+    },
+    {
+      "name": "portfolio-asuda",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 190778,
+        "CSS": 4710,
+        "JavaScript": 135
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-07-12T02:38:25Z",
+      "pushedAt": "2026-07-12T02:43:51Z",
+      "commits": 2
+    },
+    {
+      "name": "asudaxoshnawsaryas",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 41581,
+        "CSS": 906,
+        "JavaScript": 559
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-07-08T00:45:22Z",
+      "pushedAt": "2026-07-08T00:54:42Z",
+      "commits": 3
+    },
+    {
+      "name": "datashowads",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 31836,
+        "CSS": 24199,
+        "HTML": 1293
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-06-17T22:24:54Z",
+      "pushedAt": "2026-07-05T23:27:54Z",
+      "commits": 22
+    },
+    {
+      "name": "sidadamricanaricanlub",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "CSS",
+      "languages": {
+        "CSS": 42540,
+        "HTML": 21056,
+        "JavaScript": 7826,
+        "PHP": 2511
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-07-01T12:22:26Z",
+      "pushedAt": "2026-07-01T12:23:50Z",
+      "commits": 15
+    },
+    {
+      "name": "sidadamrican",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "CSS",
+      "languages": {
+        "CSS": 39259,
+        "HTML": 19484,
+        "JavaScript": 5811,
+        "PHP": 2511
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-07-01T11:56:59Z",
+      "pushedAt": "2026-07-01T12:17:28Z",
+      "commits": 3
+    },
+    {
+      "name": "web-asuda",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "languages": {
+        "Python": 59205,
+        "JavaScript": 38794,
+        "CSS": 14516,
+        "HTML": 624
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-06-09T21:43:46Z",
+      "pushedAt": "2026-06-09T21:45:19Z",
+      "commits": 2
+    },
+    {
+      "name": "promodex",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 145553,
+        "HTML": 3555,
+        "CSS": 2462,
+        "Python": 575
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-04-06T04:31:26Z",
+      "pushedAt": "2026-06-09T21:02:54Z",
+      "commits": 503
+    },
+    {
+      "name": "asuda-portfolio",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 83860,
+        "CSS": 5881,
+        "JavaScript": 845,
+        "HTML": 782
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-05-29T19:44:06Z",
+      "pushedAt": "2026-05-29T19:44:12Z",
+      "commits": 1
+    },
+    {
+      "name": "pubg-tournament-web-main",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 914627,
+        "CSS": 14466,
+        "JavaScript": 1118
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-05-11T01:13:52Z",
+      "pushedAt": "2026-05-11T01:14:01Z",
+      "commits": 1
+    },
+    {
+      "name": "package-taybat",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 12506,
+        "CSS": 3430,
+        "HTML": 418
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-04-05T15:30:09Z",
+      "pushedAt": "2026-04-05T15:33:52Z",
+      "commits": 3
+    },
+    {
+      "name": "promodex-proposal",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 57677,
+        "CSS": 4705,
+        "HTML": 369
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-03-28T04:52:37Z",
+      "pushedAt": "2026-03-28T06:37:59Z",
+      "commits": 6
+    },
+    {
+      "name": "promodex-web",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 88148,
+        "CSS": 1476,
+        "HTML": 361
+      },
+      "topics": [],
+      "stars": 0,
+      "empty": false,
+      "createdAt": "2026-03-19T19:56:53Z",
+      "pushedAt": "2026-03-19T19:57:11Z",
+      "commits": 2
+    },
+    {
+      "name": "assss",
+      "private": true,
+      "url": null,
+      "description": "",
+      "homepage": "",
+      "language": null,
+      "languages": {},
+      "topics": [],
+      "stars": 0,
+      "empty": true,
+      "createdAt": "2026-03-17T21:40:35Z",
+      "pushedAt": "2026-03-17T21:40:35Z",
+      "commits": 0
+    }
+  ]
+}
