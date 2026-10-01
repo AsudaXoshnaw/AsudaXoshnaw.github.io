@@ -97,7 +97,14 @@ function buildProjects(gh, cfg, figma) {
       title: d.title || `Design ${i + 1}`, category: 'design', icon: d.icon || 'figma',
       tags: d.tags || ['Figma'], order: i,
     }));
-  return [...repos, ...designs]
+  // projects that are not on GitHub, written by hand in projects.json → "extra"
+  const extra = (cfg.extra || [])
+    .filter((e) => e.title && !e.hidden)
+    .map((e) => ({
+      title: e.title, desc: e.desc, category: e.category || 'other', icon: e.icon, image: e.image,
+      platforms: e.platforms || [], tags: e.tags || [], order: e.order ?? 999,
+    }));
+  return [...repos, ...extra, ...designs]
     .sort((a, b) => (a.order - b.order) || (new Date(b.pushedAt || 0) - new Date(a.pushedAt || 0)));
 }
 
@@ -200,10 +207,13 @@ function renderIndex() {
         ${g.items.map((p) => `
           <li class="pcard" style="animation-delay:${Math.min(n++, 20) * 30}ms">
             <div class="pcard-top">
-              <span class="pcard-icon" aria-hidden="true"><svg viewBox="0 0 24 24">${ICONS[p.icon] || ICONS[CATEGORY_ICON[p.category]] || ICONS.code}</svg></span>
+              ${p.image
+                ? `<span class="pcard-icon has-img" aria-hidden="true"><img src="${esc(p.image)}" alt="" loading="lazy" /></span>`
+                : `<span class="pcard-icon" aria-hidden="true"><svg viewBox="0 0 24 24">${ICONS[p.icon] || ICONS[CATEGORY_ICON[p.category]] || ICONS.code}</svg></span>`}
               ${kindBadge(p)}
             </div>
             <h4 class="pcard-title">${esc(pick(p.title))}</h4>
+            ${p.desc ? `<p class="pcard-desc">${esc(pick(p.desc))}</p>` : ''}
             <p class="pcard-label">${esc(t('builtWith'))}</p>
             <ul class="techs">${p.tags.map((tag) => `<li style="--c:${techColor(tag)}">${esc(tag)}</li>`).join('')}</ul>
           </li>`).join('')}

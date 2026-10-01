@@ -1,5 +1,5 @@
 {
-  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden.",
+  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden. Projects that are not on GitHub go in \"extra\" with the same fields, plus image (a path to an icon picture).",
   "projects": {
     "AsudaXoshnaw": {
       "hidden": true
@@ -471,5 +471,27 @@
       ],
       "order": 28
     }
-  }
+  },
+  "extra": [
+    {
+      "title": {
+        "en": "Kurdern",
+        "ku": "کوردێرن"
+      },
+      "category": "mobile",
+      "platforms": [
+        "mobile"
+      ],
+      "image": "content/img/kurdern.png",
+      "tags": [
+        "Flutter",
+        "Dart"
+      ],
+      "order": 26,
+      "desc": {
+        "en": "A quiz app where everyone can join timed question-and-answer games, with special prizes for the winner of each game.",
+        "ku": "ئەپڵیکەیشنێکە کە تێیدا یاری پرسیار و وەڵام لە کاتی دیاریکراودا بەڕێوەدەچێت، هەموو کەسێک دەتوانێت بەکاری بهێنێت، و خەڵاتی تایبەت بۆ براوەی هەر یارییەک دادەنرێت."
+      }
+    }
+  ]
 }
