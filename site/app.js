@@ -7,18 +7,12 @@
 const I18N = {
   en: {
     'nav.work': 'Work', 'nav.contact': 'Contact', 'lang.switch': 'کوردی',
-    'hero.available': 'Available for new projects', 'hero.t1': 'What we’ve', 'hero.t2': 'built.',
-    'hero.cta': 'See the work', 'hero.contact': 'Get in touch',
-    'stat.projects': 'Projects', 'stat.commits': 'Commits',
     'work.title': 'Projects', builtWith: 'Built with', all: 'All',
     'contact.t1': 'Have a project in mind?', 'contact.t2': 'Let’s build it.',
     email: 'Email me',
   },
   ku: {
     'nav.work': 'کارەکان', 'nav.contact': 'پەیوەندی', 'lang.switch': 'English',
-    'hero.available': 'ئامادەم بۆ پرۆجێکتی نوێ', 'hero.t1': 'ئەوەی', 'hero.t2': 'دروستمان کردووە.',
-    'hero.cta': 'کارەکان ببینە', 'hero.contact': 'پەیوەندیم پێوە بکە',
-    'stat.projects': 'پرۆجێکت', 'stat.commits': 'کۆمیت',
     'work.title': 'پرۆجێکتەکان', builtWith: 'دروستکراوە بە', all: 'هەمووی',
     'contact.t1': 'بیرۆکەی پرۆجێکتێکت هەیە؟', 'contact.t2': 'با دروستی بکەین.',
     email: 'ئیمەیڵم بۆ بنێرە',
@@ -116,33 +110,8 @@ function applyI18n() {
 function renderProfile() {
   const { site, gh } = DATA;
   document.querySelectorAll('[data-bind="name"]').forEach((el) => { el.textContent = site.name || gh.user.name; });
-  document.querySelectorAll('[data-bind="role"]').forEach((el) => { el.textContent = pick(site.role); });
-  document.querySelectorAll('[data-bind="bio"]').forEach((el) => { el.textContent = pick(site.bio) || gh.user.bio; });
-  document.querySelectorAll('[data-bind="location"]').forEach((el) => { el.textContent = pick(site.location) || gh.user.location; });
-  document.querySelectorAll('[data-bind="avatar"]').forEach((el) => { el.src = gh.user.avatar; });
-  $('.eyebrow').hidden = site.available === false;
   $('#year').textContent = new Date().getFullYear();
   document.title = `${site.name} — ${lang === 'ku' ? 'کارەکان' : 'Work'}`;
-}
-
-function countUp(el, to) {
-  const start = performance.now();
-  const step = (now) => {
-    const p = Math.min(1, (now - start) / 1100);
-    el.textContent = num(Math.round(to * (1 - Math.pow(1 - p, 3))));
-    if (p < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-}
-
-function renderStats() {
-  const vals = {
-    projects: DATA.projects.length,
-    commits: DATA.gh.repos.reduce((s, r) => s + (r.commits || 0), 0),
-  };
-  document.querySelectorAll('[data-stat]').forEach((el) => countUp(el, vals[el.dataset.stat]));
-  const html = DATA.projects.map((p) => `<span>${esc(pick(p.title))}</span>`).join('');
-  $('#marquee').innerHTML = html + html;
 }
 
 // Line icons (24×24, stroke) — pick one per project with "icon" in projects.json
@@ -255,7 +224,6 @@ function renderContact() {
 function renderAll() {
   applyI18n();
   renderProfile();
-  renderStats();
   renderFilters();
   renderIndex();
   renderContact();
