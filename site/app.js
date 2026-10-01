@@ -102,6 +102,7 @@ function buildProjects(gh, cfg, figma) {
     .filter((e) => e.title && !e.hidden)
     .map((e) => ({
       title: e.title, desc: e.desc, category: e.category || 'other', icon: e.icon, image: e.image,
+      repoUrl: e.repo, private: e.private,
       platforms: e.platforms || [], tags: e.tags || [], order: e.order ?? 999,
     }));
   return [...repos, ...extra, ...designs]
@@ -150,6 +151,7 @@ const ICONS = {
   graduation: '<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5M22 10v6"/>',
   figma: '<path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1 0 7H12V2zM12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0zM5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0zM5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>',
   code: '<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>',
+  calculator: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h4"/>',
   discount: '<path d="M2 9a3 3 0 0 0 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 0 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="m9 15 6-6M9 9h.01M15 15h.01"/>',
 };
 const CATEGORY_ICON = { system: 'dashboard', webapp: 'layout', website: 'network', mobile: 'graduation', proposal: 'doc', design: 'figma', other: 'code' };
@@ -173,6 +175,7 @@ const TECH_COLORS = {
   three: '#a1a1aa', gsap: '#88ce02', framer: '#e946ff', vite: '#a66bff', tauri: '#ffc131', flutter: '#02569b',
   dart: '#00b4ab', expo: '#a1a1aa', html: '#e34c26', css: '#663399', php: '#777bb4', prisma: '#5a67d8',
   recharts: '#22b5bf', bootstrap: '#7952b3', pdf: '#f40f02', sqlite: '#0f80cc', figma: '#a259ff',
+  'c#': '#178600', '.net': '#512bd4', wpf: '#512bd4', 'ef core': '#512bd4', postgresql: '#336791',
 };
 const techColor = (tag) => {
   const k = tag.toLowerCase();

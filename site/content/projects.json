@@ -1,5 +1,5 @@
 {
-  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, desc {en, ku} (one short sentence), category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden. Projects that are not on GitHub go in \"extra\" with the same fields, plus image (a path to an icon picture).",
+  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, desc {en, ku} (one short sentence), category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden. Projects that are not on GitHub go in \"extra\" with the same fields, plus image (a path to an icon picture), repo (GitHub link) and private (true/false).",
   "projects": {
     "AsudaXoshnaw": {
       "hidden": true
@@ -566,6 +566,32 @@
         "en": "Discount-card app for members to get offers on their purchases.",
         "ku": "ئەپی کارتی داشکاندن بۆ ئەوەی ئەندامان داشکاندن لەسەر کڕینەکانیان وەربگرن."
       }
+    },
+    {
+      "title": {
+        "en": "Alshurooq Accounting",
+        "ku": "سیستەمی ژمێریاری الشروق"
+      },
+      "desc": {
+        "en": "Offline double-entry accounting desktop app for Iraq, with IQD/USD journals, trial balance and audit history.",
+        "ku": "ئەپی ژمێریاری دێسکتۆپ بۆ عێراق کە بێ ئینتەرنێت کار دەکات، بە تۆماری دینار و دۆلار، تەرازووی پێداچوونەوە و مێژووی وردبینی."
+      },
+      "category": "system",
+      "platforms": [
+        "desktop"
+      ],
+      "icon": "calculator",
+      "tags": [
+        "C#",
+        ".NET 10",
+        "WPF",
+        "EF Core",
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "repo": "https://github.com/zringmustafa-jpg/accounting-project",
+      "private": true,
+      "order": 2
     }
   ]
 }
