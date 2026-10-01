@@ -77,6 +77,7 @@ function buildProjects(gh, cfg, figma) {
       const langs = Object.entries(r.languages || {}).sort((a, b) => b[1] - a[1]).map(([l]) => l);
       return {
         title: c.title || prettify(r.name),
+        desc: c.desc,
         category: c.category || 'other',
         icon: c.icon,
         platforms: c.platforms || [],

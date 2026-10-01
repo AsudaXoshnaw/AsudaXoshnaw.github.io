@@ -1,5 +1,5 @@
 {
-  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden. Projects that are not on GitHub go in \"extra\" with the same fields, plus image (a path to an icon picture).",
+  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, desc {en, ku} (one short sentence), category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden. Projects that are not on GitHub go in \"extra\" with the same fields, plus image (a path to an icon picture).",
   "projects": {
     "AsudaXoshnaw": {
       "hidden": true
@@ -14,6 +14,10 @@
       "title": {
         "en": "ZAS Tech Clinic — Practice Management",
         "ku": "ZAS Tech Clinic — سیستەمی بەڕێوەبردنی کلینیک"
+      },
+      "desc": {
+        "en": "Clinic management system for patients, appointments, lab tests and finance — on web and desktop.",
+        "ku": "سیستەمی بەڕێوەبردنی کلینیک بۆ نەخۆش، ژوان، تاقیکردنەوە و دارایی — لەسەر وێب و دێسکتۆپ."
       },
       "category": "system",
       "platforms": [
@@ -34,6 +38,10 @@
       "title": {
         "en": "ZAS Tech Smart Community",
         "ku": "ZAS Tech — ئەپی کۆمەڵگەی زیرەک"
+      },
+      "desc": {
+        "en": "Residential-community app for bills, maintenance, guests and internet, with an admin panel.",
+        "ku": "ئەپی کۆمەڵگەی نیشتەجێبوون بۆ وەسڵ، چاککردنەوە، میوان و ئینتەرنێت، لەگەڵ پانێڵی بەڕێوەبردن."
       },
       "category": "mobile",
       "platforms": [
@@ -73,6 +81,10 @@
         "en": "Hajmari Mn — Installment Marketplace",
         "ku": "هەژماری من — بازاڕی قیست"
       },
+      "desc": {
+        "en": "Iraqi installment-shopping marketplace with customer, merchant, admin and finance portals.",
+        "ku": "بازاڕی کڕین بە قیست بۆ عێراق، بە پۆرتاڵی کڕیار، بازرگان، ئەدمین و دارایی."
+      },
       "category": "webapp",
       "platforms": [
         "web"
@@ -91,6 +103,10 @@
         "en": "E-Clinic",
         "ku": "کلینیکی ئەلیکترۆنی"
       },
+      "desc": {
+        "en": "Arabic and English clinic web app for bookings and patient records.",
+        "ku": "وێب ئەپی کلینیک بە عەرەبی و ئینگلیزی بۆ ژوان و تۆماری نەخۆشەکان."
+      },
       "category": "system",
       "platforms": [
         "web"
@@ -108,6 +124,10 @@
       "title": {
         "en": "Employee Management System",
         "ku": "سیستەمی بەڕێوەبردنی کارمەندان"
+      },
+      "desc": {
+        "en": "Arabic dashboard for managing employees and their daily attendance.",
+        "ku": "داشبۆردێکی عەرەبی بۆ بەڕێوەبردنی کارمەندان و ئامادەبوونی ڕۆژانەیان."
       },
       "category": "system",
       "platforms": [
@@ -145,6 +165,10 @@
         "en": "Erbil Chamber Company Directory",
         "ku": "ڕێبەری کۆمپانیاکانی ئەنجوومەنی بازرگانی هەولێر"
       },
+      "desc": {
+        "en": "Searchable directory of every company in the Erbil Chamber of Commerce.",
+        "ku": "ڕێبەرێکی گەڕان بۆ هەموو کۆمپانیاکانی ئەنجوومەنی بازرگانی هەولێر."
+      },
       "category": "webapp",
       "platforms": [
         "web"
@@ -162,6 +186,10 @@
       "title": {
         "en": "Gelato IQ — Self-Service Kiosk",
         "ku": "Gelato IQ — کیۆسکی داواکاری خۆیی"
+      },
+      "desc": {
+        "en": "Touchscreen self-ordering kiosk for an ice-cream shop, in Kurdish, Arabic and English.",
+        "ku": "کیۆسکی داواکردن بە شاشەی دەستلێدان بۆ دوکانی ئایسکریم، بە کوردی، عەرەبی و ئینگلیزی."
       },
       "category": "webapp",
       "platforms": [
@@ -199,6 +227,10 @@
       "title": {
         "en": "ZAS Tech — Company Website",
         "ku": "ZAS Tech — ماڵپەڕی کۆمپانیا"
+      },
+      "desc": {
+        "en": "Company website for ZAS Tech IT solutions, with an animated 3D hero.",
+        "ku": "ماڵپەڕی کۆمپانیای ZAS Tech بۆ چارەسەرەکانی IT، لەگەڵ دیمەنی سێ ڕەهەندی ئەنیمەیشندار."
       },
       "category": "website",
       "icon": "network",
@@ -262,6 +294,10 @@
         "en": "Karzan Insurance",
         "ku": "بیمەی کارزان"
       },
+      "desc": {
+        "en": "UK vehicle-insurance website with an online quote request form.",
+        "ku": "ماڵپەڕی بیمەی ئۆتۆمبێل بۆ بەریتانیا، لەگەڵ فۆڕمی داواکردنی نرخ."
+      },
       "category": "website",
       "icon": "car",
       "tags": [
@@ -291,6 +327,10 @@
         "en": "INZZA",
         "ku": "INZZA"
       },
+      "desc": {
+        "en": "Product pages for INZZA IPL hair-removal devices.",
+        "ku": "پەڕەکانی ناساندنی ئامێرەکانی لابردنی مووی INZZA."
+      },
       "category": "website",
       "icon": "sparkle-device",
       "tags": [
@@ -305,6 +345,10 @@
         "en": "Alpees Global Trade",
         "ku": "Alpees — بازرگانی نێودەوڵەتی"
       },
+      "desc": {
+        "en": "Company website for an international trading partner.",
+        "ku": "ماڵپەڕی کۆمپانیایەکی بازرگانی نێودەوڵەتی."
+      },
       "category": "website",
       "icon": "ship",
       "tags": [
@@ -318,6 +362,10 @@
       "title": {
         "en": "American Lube Trading",
         "ku": "American Lube Trading"
+      },
+      "desc": {
+        "en": "Website for a lubricants trading company, with a product catalogue and enquiry forms.",
+        "ku": "ماڵپەڕی کۆمپانیایەکی بازرگانی ڕۆن، لەگەڵ کاتالۆگی بەرهەم و فۆڕمی پرسیار."
       },
       "category": "website",
       "icon": "droplet",
@@ -442,6 +490,10 @@
         "en": "EduNova 2.0",
         "ku": "EduNova 2.0"
       },
+      "desc": {
+        "en": "Education app for Android and iOS with offline storage, camera and printing.",
+        "ku": "ئەپی پەروەردەیی بۆ ئەندرۆید و iOS، لەگەڵ هەڵگرتنی ئۆفلاین، کامێرا و چاپ."
+      },
       "category": "mobile",
       "platforms": [
         "mobile"
@@ -491,8 +543,8 @@
       ],
       "order": 26,
       "desc": {
-        "en": "A quiz app where everyone can join timed question-and-answer games, with special prizes for the winner of each game.",
-        "ku": "ئەپڵیکەیشنێکە کە تێیدا یاری پرسیار و وەڵام لە کاتی دیاریکراودا بەڕێوەدەچێت، هەموو کەسێک دەتوانێت بەکاری بهێنێت، و خەڵاتی تایبەت بۆ براوەی هەر یارییەک دادەنرێت."
+        "en": "Quiz app with timed question-and-answer games and a prize for each winner.",
+        "ku": "ئەپی یاری پرسیار و وەڵام لە کاتی دیاریکراودا، بە خەڵات بۆ براوەی هەر یارییەک."
       }
     },
     {
@@ -509,7 +561,11 @@
         "Flutter",
         "Dart"
       ],
-      "order": 26
+      "order": 26,
+      "desc": {
+        "en": "Discount-card app for members to get offers on their purchases.",
+        "ku": "ئەپی کارتی داشکاندن بۆ ئەوەی ئەندامان داشکاندن لەسەر کڕینەکانیان وەربگرن."
+      }
     }
   ]
 }
