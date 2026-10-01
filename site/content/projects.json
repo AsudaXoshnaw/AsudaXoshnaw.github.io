@@ -35,7 +35,7 @@
         "en": "ZAS Tech Smart Community",
         "ku": "ZAS Tech — ئەپی کۆمەڵگەی زیرەک"
       },
-      "category": "system",
+      "category": "mobile",
       "platforms": [
         "mobile",
         "web"
@@ -47,7 +47,7 @@
         "React Native",
         "Tailwind"
       ],
-      "order": 2
+      "order": 25
     },
     "AdminPanel_Zastech": {
       "title": {
