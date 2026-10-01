@@ -592,6 +592,31 @@
       "repo": "https://github.com/zringmustafa-jpg/accounting-project",
       "private": true,
       "order": 2
+    },
+    {
+      "title": {
+        "en": "Zanist Campus — The Intelligent University",
+        "ku": "زانیست کامپەس — زانکۆی زیرەک"
+      },
+      "desc": {
+        "en": "University management platform for campuses, faculties and departments, with role-based access for every unit.",
+        "ku": "پلاتفۆرمی بەڕێوەبردنی زانکۆ بۆ کامپەس، کۆلێژ و بەشەکان، بە دەسەڵاتی جیاواز بۆ هەر ڕۆڵ و یەکەیەک."
+      },
+      "category": "system",
+      "platforms": [
+        "web"
+      ],
+      "icon": "university",
+      "tags": [
+        "React",
+        "Vite",
+        "Node.js",
+        "Fastify",
+        "PostgreSQL"
+      ],
+      "repo": "https://github.com/zringmustafa-jpg/zanist-campus-the-intelligent-university",
+      "private": true,
+      "order": 3
     }
   ]
 }
