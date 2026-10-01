@@ -28,20 +28,20 @@ jobs:
       SHOWCASE_REPO: ${{ github.event.repository.name }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Require SHOWCASE_TOKEN
-        run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::Add the SHOWCASE_TOKEN secret so private repos can be built."
-            exit 1
-          fi
+      - name: Check SHOWCASE_TOKEN
+        if: env.GH_TOKEN == ''
+        run: echo "::warning::Add the SHOWCASE_TOKEN secret (see README) — skipping the rebuild until then."
 
       - uses: actions/checkout@v4
+        if: env.GH_TOKEN != ''
 
       - uses: actions/setup-node@v4
+        if: env.GH_TOKEN != ''
         with:
           node-version: 22
 
       - name: Cache npm downloads
+        if: env.GH_TOKEN != ''
         uses: actions/cache@v4
         with:
           path: ~/.npm
@@ -49,18 +49,23 @@ jobs:
           restore-keys: npm-${{ runner.os }}-
 
       - name: Install tools
+        if: env.GH_TOKEN != ''
         run: |
           npm ci
           npx playwright install --with-deps chromium
 
       - name: Sync GitHub data
+        if: env.GH_TOKEN != ''
         run: node scripts/sync-github.mjs
 
       - name: Build live demos
+        if: env.GH_TOKEN != ''
         run: node scripts/build-demos.mjs
 
       - name: Take screenshots
+        if: env.GH_TOKEN != ''
         run: node scripts/screenshots.mjs
 
       - name: Publish to gh-pages
+        if: env.GH_TOKEN != ''
         run: node scripts/deploy.mjs
