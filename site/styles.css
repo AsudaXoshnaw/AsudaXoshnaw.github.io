@@ -258,3 +258,15 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
 .pcard-icon.has-img { overflow: hidden; background: none; border-color: var(--line); }
 .pcard-icon.has-img img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.14); }
 .pcard-desc { position: relative; margin: 4px 0 0; font-size: 14.5px; line-height: 1.6; color: var(--muted); }
+
+/* GitHub link at the bottom of each card */
+.pcard-gh {
+  position: relative; align-self: flex-start; display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 16px; height: 36px; padding: 0 14px; border-radius: 10px;
+  font-size: 13.5px; font-weight: 600; color: var(--text);
+  border: 1px solid var(--line-2); background: var(--surface-2); transition: border-color .2s, background .2s;
+}
+.pcard-gh:hover { border-color: var(--hue); background: color-mix(in srgb, var(--hue) 10%, var(--surface-2)); }
+.pcard-gh svg { width: 16px; height: 16px; }
+.pcard-gh .fill { fill: currentColor; stroke: none; }
+.pcard-gh .lock { width: 13px; height: 13px; color: var(--muted); }

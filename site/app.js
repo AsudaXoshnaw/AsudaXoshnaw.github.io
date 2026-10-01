@@ -7,11 +7,11 @@
 const I18N = {
   en: {
     'nav.work': 'Work', 'lang.switch': 'کوردی',
-    'work.title': 'Projects', builtWith: 'Built with', all: 'All',
+    'work.title': 'Projects', builtWith: 'Built with', all: 'All', private: 'Private repository',
   },
   ku: {
     'nav.work': 'کارەکان', 'lang.switch': 'English',
-    'work.title': 'پرۆجێکتەکان', builtWith: 'دروستکراوە بە', all: 'هەمووی',
+    'work.title': 'پرۆجێکتەکان', builtWith: 'دروستکراوە بە', all: 'هەمووی', private: 'ڕیپۆی تایبەت',
   },
 };
 
@@ -78,6 +78,9 @@ function buildProjects(gh, cfg, figma) {
       return {
         title: c.title || prettify(r.name),
         desc: c.desc,
+        // private repos open only for the owner; everyone else gets GitHub's 404
+        repoUrl: `https://github.com/${gh.user.login}/${r.name}`,
+        private: r.private,
         category: c.category || 'other',
         icon: c.icon,
         platforms: c.platforms || [],
@@ -152,6 +155,17 @@ const ICONS = {
 const CATEGORY_ICON = { system: 'dashboard', webapp: 'layout', website: 'network', mobile: 'graduation', proposal: 'doc', design: 'figma', other: 'code' };
 const CATEGORY_HUE = { system: '#7c8cff', webapp: '#3ddc97', website: '#c8f23a', mobile: '#ff8a5c', proposal: '#f5a524', design: '#a259ff', other: '#8d919b' };
 
+const GH_PATH = 'M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z';
+
+function githubLink(p) {
+  if (!p.repoUrl) return '';
+  const lock = p.private
+    ? `<svg class="lock" viewBox="0 0 24 24" role="img" aria-label="${esc(t('private'))}"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>`
+    : '';
+  return `<a class="pcard-gh" href="${esc(p.repoUrl)}" target="_blank" rel="noopener">
+    <svg class="fill" viewBox="0 0 24 24" aria-hidden="true"><path d="${GH_PATH}"/></svg>GitHub${lock}</a>`;
+}
+
 // brand colours for the "built with" chips
 const TECH_COLORS = {
   react: '#61dafb', 'react native': '#61dafb', next: '#a1a1aa', typescript: '#3178c6', javascript: '#f1e05a',
@@ -214,6 +228,7 @@ function renderIndex() {
             ${p.desc ? `<p class="pcard-desc">${esc(pick(p.desc))}</p>` : ''}
             <p class="pcard-label">${esc(t('builtWith'))}</p>
             <ul class="techs">${p.tags.map((tag) => `<li style="--c:${techColor(tag)}">${esc(tag)}</li>`).join('')}</ul>
+            ${githubLink(p)}
           </li>`).join('')}
       </ul>
     </section>`).join('');
