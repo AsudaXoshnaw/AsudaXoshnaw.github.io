@@ -121,6 +121,7 @@
       "order": 6
     },
     "datashowads": {
+      "hidden": true,
       "title": {
         "en": "Saryas Ads Analyzer",
         "ku": "شیکاری ڕیکلامی ساریاس"
@@ -175,6 +176,7 @@
       "order": 9
     },
     "pubg-tournament-web-main": {
+      "hidden": true,
       "title": {
         "en": "PUBG Arena — Tournament Platform",
         "ku": "PUBG Arena — پلاتفۆرمی پاڵەوانێتی"
@@ -208,6 +210,7 @@
       "order": 11
     },
     "promodex": {
+      "hidden": true,
       "title": {
         "en": "Promodex Studio",
         "ku": "Promodex Studio"
@@ -223,6 +226,7 @@
       "order": 12
     },
     "asudaxoshnawsaryas": {
+      "hidden": true,
       "title": {
         "en": "Promodex Agency — Next.js",
         "ku": "Promodex Agency — Next.js"
@@ -238,6 +242,7 @@
       "order": 13
     },
     "promodex-web": {
+      "hidden": true,
       "title": {
         "en": "Promodex — Landing",
         "ku": "Promodex — پەڕەی سەرەکی"
@@ -266,6 +271,7 @@
       "order": 15
     },
     "FuratReklam": {
+      "hidden": true,
       "title": {
         "en": "Furat Modern Printing",
         "ku": "چاپخانەی فورات"
@@ -338,6 +344,7 @@
       "order": 20
     },
     "web-asuda": {
+      "hidden": true,
       "title": {
         "en": "Portfolio — 2026",
         "ku": "پۆرتفۆلیۆ — ٢٠٢٦"
@@ -352,6 +359,7 @@
       "order": 21
     },
     "asuda-portfolio": {
+      "hidden": true,
       "title": {
         "en": "Portfolio — 3D Edition",
         "ku": "پۆرتفۆلیۆ — وەشانی سێ ڕەهەندی"
@@ -367,6 +375,7 @@
       "order": 22
     },
     "portfolio-asuda": {
+      "hidden": true,
       "title": {
         "en": "Portfolio — Next.js Edition",
         "ku": "پۆرتفۆلیۆ — وەشانی Next.js"
@@ -382,6 +391,7 @@
       "order": 23
     },
     "propoasl-match-perfume": {
+      "hidden": true,
       "title": {
         "en": "Match Perfumes — Technical Proposal",
         "ku": "Match Perfumes — پێشنیاری تەکنیکی"
@@ -396,6 +406,7 @@
       "order": 24
     },
     "promodex-proposal": {
+      "hidden": true,
       "title": {
         "en": "Promodex — Client Proposal",
         "ku": "Promodex — پێشنیاری کڕیار"
@@ -410,6 +421,7 @@
       "order": 25
     },
     "package-taybat": {
+      "hidden": true,
       "title": {
         "en": "Taybat — 30-Day Work Package",
         "ku": "تەیبەت — پاکێجی کاری ٣٠ ڕۆژ"
@@ -442,6 +454,7 @@
       "order": 27
     },
     "edu-nova": {
+      "hidden": true,
       "title": {
         "en": "EduNova — Flutter",
         "ku": "EduNova — Flutter"
