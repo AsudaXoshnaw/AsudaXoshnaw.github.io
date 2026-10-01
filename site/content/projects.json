@@ -1,0 +1,515 @@
+{
+  "_help": "Per-repo overrides. Any repo not listed here still appears automatically. Fields: title, desc {en, ku}, category (system | webapp | website | mobile | proposal), tags, featured, order, hidden, recipe (static | vite | next | expo | none), dir (sub-folder to build), noLive.",
+  "projects": {
+    "AsudaXoshnaw": {
+      "hidden": true
+    },
+    "assss": {
+      "hidden": true
+    },
+    "-Web-Vulnerability-Scanner": {
+      "hidden": true
+    },
+    "system-doctors-zas-tech": {
+      "title": {
+        "en": "ZAS Tech Clinic — Practice Management",
+        "ku": "ZAS Tech Clinic — سیستەمی بەڕێوەبردنی کلینیک"
+      },
+      "desc": {
+        "en": "Full clinic system for patients, visits, appointments, lab tests, finance and staff roles — web and desktop (Tauri) with Supabase, i18n and charts.",
+        "ku": "سیستەمێکی تەواوی کلینیک بۆ نەخۆش، سەردان، ژوان، تاقیکردنەوە، دارایی و ڕۆڵی کارمەندان — وێب و دێسکتۆپ (Tauri) لەگەڵ Supabase."
+      },
+      "category": "system",
+      "featured": true,
+      "order": 1,
+      "tags": [
+        "React 19",
+        "TypeScript",
+        "Supabase",
+        "Tauri",
+        "Tailwind"
+      ]
+    },
+    "APP_CITY_ZAS_TECH": {
+      "title": {
+        "en": "ZAS Tech Smart Community",
+        "ku": "ZAS Tech — ئەپی کۆمەڵگەی زیرەک"
+      },
+      "desc": {
+        "en": "Residential-community platform: a React Native resident app (bills, maintenance, guests, internet) plus this admin web console for managing residents and services.",
+        "ku": "پلاتفۆرمی کۆمەڵگەی نیشتەجێبوون: ئەپی دانیشتووان (وەسڵ، چاککردنەوە، میوان، ئینتەرنێت) لەگەڵ ئەم پانێڵی بەڕێوەبردنە."
+      },
+      "category": "system",
+      "dir": "admin-web",
+      "order": 2,
+      "tags": [
+        "React 19",
+        "TypeScript",
+        "React Native",
+        "Tailwind"
+      ]
+    },
+    "AdminPanel_Zastech": {
+      "title": {
+        "en": "ZAS Tech Resident Admin",
+        "ku": "پانێڵی بەڕێوەبردنی دانیشتووانی ZAS Tech"
+      },
+      "desc": {
+        "en": "Multi-project admin dashboard for residential complexes, with a Firebase back end, a resident REST API and per-complex permissions.",
+        "ku": "داشبۆردی بەڕێوەبردن بۆ چەند کۆمەڵگەیەکی نیشتەجێبوون، لەگەڵ Firebase و API ـی دانیشتووان و دەسەڵاتی جیاواز بۆ هەر پرۆجێکتێک."
+      },
+      "category": "system",
+      "order": 3,
+      "tags": [
+        "React",
+        "Firebase",
+        "Cloud Functions",
+        "Vite"
+      ]
+    },
+    "hajmari-mn": {
+      "title": {
+        "en": "Hajmari Mn — Installment Marketplace",
+        "ku": "هەژماری من — بازاڕی قیست"
+      },
+      "desc": {
+        "en": "Iraqi buy-now-pay-later marketplace with four portals — customer, merchant, admin and finance partner — covering eligibility, contracts, payments and orders.",
+        "ku": "بازاڕی کڕینی بە قیست بۆ عێراق بە چوار پۆرتاڵ — کڕیار، بازرگان، ئەدمین و هاوبەشی دارایی — بۆ شایستەیی، گرێبەست، پارەدان و داواکاری."
+      },
+      "category": "webapp",
+      "featured": true,
+      "order": 4,
+      "tags": [
+        "React",
+        "Recharts",
+        "Tailwind",
+        "React Router"
+      ]
+    },
+    "dr_junaid_new_web_saystem": {
+      "title": {
+        "en": "E-Clinic",
+        "ku": "کلینیکی ئەلیکترۆنی"
+      },
+      "desc": {
+        "en": "Bilingual Arabic/English clinic web app for bookings, patient records and daily reports, with state in Zustand and analytics charts.",
+        "ku": "وێب ئەپی کلینیک بە عەرەبی و ئینگلیزی بۆ ژوان، تۆماری نەخۆش و ڕاپۆرتی ڕۆژانە."
+      },
+      "category": "system",
+      "order": 5,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Zustand",
+        "Recharts"
+      ]
+    },
+    "sultanmwzafaradminpanel": {
+      "title": {
+        "en": "Employee Management System",
+        "ku": "سیستەمی بەڕێوەبردنی کارمەندان"
+      },
+      "desc": {
+        "en": "Arabic employee-management console built on the Next.js App Router.",
+        "ku": "کۆنسۆڵی بەڕێوەبردنی کارمەندان بە زمانی عەرەبی، دروستکراو بە Next.js."
+      },
+      "category": "system",
+      "order": 6,
+      "tags": [
+        "Next.js",
+        "React 19",
+        "TypeScript"
+      ]
+    },
+    "datashowads": {
+      "title": {
+        "en": "Saryas Ads Analyzer",
+        "ku": "شیکاری ڕیکلامی ساریاس"
+      },
+      "desc": {
+        "en": "Campaign reporting tool for Saryas Agency: imports ad data and PDFs, analyses budgets and exports branded PDF reports for clients.",
+        "ku": "ئامرازی ڕاپۆرتی کەمپەین بۆ ساریاس ئەیجنسی: داتای ڕیکلام و PDF وەردەگرێت، بودجە شی دەکاتەوە و ڕاپۆرتی PDF بۆ کڕیار دەردەکات."
+      },
+      "category": "webapp",
+      "order": 7,
+      "tags": [
+        "React",
+        "PDF.js",
+        "jsPDF",
+        "Vite"
+      ]
+    },
+    "list-compamyes": {
+      "title": {
+        "en": "Erbil Chamber Company Directory",
+        "ku": "ڕێبەری کۆمپانیاکانی ئەنجوومەنی بازرگانی هەولێر"
+      },
+      "desc": {
+        "en": "Scrapes every company from the Erbil Chamber of Commerce site (ASP.NET partial postbacks) and presents them as a searchable card directory.",
+        "ku": "هەموو کۆمپانیاکانی ماڵپەڕی ئەنجوومەنی بازرگانی هەولێر کۆدەکاتەوە و وەک ڕێبەرێکی گەڕانی کارتی پیشانیان دەدات."
+      },
+      "category": "webapp",
+      "order": 8,
+      "tags": [
+        "Node.js",
+        "Express",
+        "Cheerio",
+        "Scraping"
+      ]
+    },
+    "Gelato-Application": {
+      "title": {
+        "en": "Gelato IQ — Self-Service Kiosk",
+        "ku": "Gelato IQ — کیۆسکی داواکاری خۆیی"
+      },
+      "desc": {
+        "en": "Touchscreen ordering kiosk for an ice-cream shop in Kurdish, Arabic and English — menu, product options, cart and a simulated payment flow.",
+        "ku": "کیۆسکی داواکاری بە شاشەی دەستلێدان بۆ دوکانی ئایسکریم بە کوردی، عەرەبی و ئینگلیزی — مێنیو، هەڵبژاردن، سەبەتە و پارەدان."
+      },
+      "category": "webapp",
+      "featured": true,
+      "order": 9,
+      "tags": [
+        "JavaScript",
+        "Kiosk UI",
+        "i18n",
+        "SVG"
+      ]
+    },
+    "pubg-tournament-web-main": {
+      "title": {
+        "en": "PUBG Arena — Tournament Platform",
+        "ku": "PUBG Arena — پلاتفۆرمی پاڵەوانێتی"
+      },
+      "desc": {
+        "en": "Esports tournament platform split into a public site, an admin panel and an Express + Prisma API for teams, brackets and registrations.",
+        "ku": "پلاتفۆرمی پاڵەوانێتی ئیسپۆرتس بە سێ بەش: ماڵپەڕی گشتی، پانێڵی ئەدمین و API بە Express و Prisma بۆ تیم و خشتەی یاری."
+      },
+      "category": "webapp",
+      "dir": "pubg-tournament-web-main/apps/frontend",
+      "order": 10,
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Express",
+        "Prisma"
+      ]
+    },
+    "zastech-website-last-update-new": {
+      "title": {
+        "en": "ZAS Tech — Company Website",
+        "ku": "ZAS Tech — ماڵپەڕی کۆمپانیا"
+      },
+      "desc": {
+        "en": "Arabic corporate site for an IT-solutions company with a Three.js node-network hero, GSAP scroll effects and Framer Motion transitions.",
+        "ku": "ماڵپەڕی کۆمپانیای چارەسەری IT بە عەرەبی لەگەڵ هیرۆی سێ ڕەهەندی Three.js و ئەنیمەیشنی GSAP."
+      },
+      "category": "website",
+      "featured": true,
+      "order": 11,
+      "tags": [
+        "React",
+        "Three.js",
+        "GSAP",
+        "Framer Motion"
+      ]
+    },
+    "promodex": {
+      "title": {
+        "en": "Promodex Studio",
+        "ku": "Promodex Studio"
+      },
+      "desc": {
+        "en": "Website for a digital agency in Erbil, with 3D scenes, animated service pages and a price-package builder.",
+        "ku": "ماڵپەڕی ئاژانسێکی دیجیتاڵی لە هەولێر، لەگەڵ دیمەنی سێ ڕەهەندی، پەڕەی خزمەتگوزاری و دروستکەری پاکێجی نرخ."
+      },
+      "category": "website",
+      "order": 12,
+      "tags": [
+        "React",
+        "Three.js",
+        "GSAP",
+        "Tailwind"
+      ]
+    },
+    "asudaxoshnawsaryas": {
+      "title": {
+        "en": "Promodex Agency — Next.js",
+        "ku": "Promodex Agency — Next.js"
+      },
+      "desc": {
+        "en": "Agency marketing site rebuilt on Next.js with smooth scroll choreography in GSAP and Framer Motion.",
+        "ku": "ماڵپەڕی ئاژانس بە Next.js لەگەڵ ئەنیمەیشنی نەرم بە GSAP و Framer Motion."
+      },
+      "category": "website",
+      "order": 13,
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "GSAP",
+        "Framer Motion"
+      ]
+    },
+    "promodex-web": {
+      "title": {
+        "en": "Promodex — Landing",
+        "ku": "Promodex — پەڕەی سەرەکی"
+      },
+      "desc": {
+        "en": "Multi-page agency landing site with routing and Tailwind CSS v4.",
+        "ku": "ماڵپەڕی چەند پەڕەیی ئاژانس بە Tailwind CSS v4."
+      },
+      "category": "website",
+      "order": 14,
+      "tags": [
+        "React",
+        "Tailwind v4",
+        "React Router"
+      ]
+    },
+    "karzan-car": {
+      "title": {
+        "en": "Karzan Insurance",
+        "ku": "بیمەی کارزان"
+      },
+      "desc": {
+        "en": "Premium UK vehicle-insurance site with a quote request flow that emails leads straight to the team.",
+        "ku": "ماڵپەڕی بیمەی ئۆتۆمبێل بۆ بەریتانیا لەگەڵ فۆڕمی داواکردنی نرخ کە ڕاستەوخۆ ئیمەیڵ دەنێرێت."
+      },
+      "category": "website",
+      "order": 15,
+      "tags": [
+        "React",
+        "Tailwind",
+        "EmailJS"
+      ]
+    },
+    "FuratReklam": {
+      "title": {
+        "en": "Furat Modern Printing",
+        "ku": "چاپخانەی فورات"
+      },
+      "desc": {
+        "en": "Arabic website and portfolio for a printing and advertising house in Erbil.",
+        "ku": "ماڵپەڕ و پۆرتفۆلیۆی چاپخانە و ڕیکلامێک لە هەولێر بە زمانی عەرەبی."
+      },
+      "category": "website",
+      "order": 16,
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    "inzza": {
+      "title": {
+        "en": "INZZA — IPL Product Pages",
+        "ku": "INZZA — پەڕەی بەرهەمەکان"
+      },
+      "desc": {
+        "en": "Product landing pages for a line of IPL hair-removal devices — Pro 2026, Flash Unlimited and Evevelina.",
+        "ku": "پەڕەی ناساندنی بەرهەم بۆ ئامێرەکانی لابردنی موو بە IPL — Pro 2026، Flash Unlimited و Evevelina."
+      },
+      "category": "website",
+      "order": 17,
+      "tags": [
+        "HTML",
+        "Bootstrap",
+        "JavaScript"
+      ]
+    },
+    "alpess": {
+      "title": {
+        "en": "Alpees Global Trade",
+        "ku": "Alpees — بازرگانی نێودەوڵەتی"
+      },
+      "desc": {
+        "en": "Corporate website for an international trade-partner company.",
+        "ku": "ماڵپەڕی کۆمپانیایەکی هاوبەشی بازرگانی نێودەوڵەتی."
+      },
+      "category": "website",
+      "order": 18,
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    "sidadamrican": {
+      "title": {
+        "en": "American Lube Trading",
+        "ku": "American Lube Trading"
+      },
+      "desc": {
+        "en": "Company website for a lubricants distributor, with product catalogue and enquiry forms.",
+        "ku": "ماڵپەڕی کۆمپانیایەکی دابەشکەری ڕۆن، لەگەڵ کاتالۆگی بەرهەم و فۆڕمی پرسیار."
+      },
+      "category": "website",
+      "order": 19,
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
+      ]
+    },
+    "sidadamricanaricanlub": {
+      "title": {
+        "en": "American Lube Trading — v2",
+        "ku": "American Lube Trading — وەشانی ٢"
+      },
+      "desc": {
+        "en": "Second iteration of the American Lube site with an animated splash screen.",
+        "ku": "وەشانی دووەمی ماڵپەڕی American Lube لەگەڵ شاشەی دەستپێکی ئەنیمەیشندار."
+      },
+      "category": "website",
+      "order": 20,
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
+      ]
+    },
+    "web-asuda": {
+      "title": {
+        "en": "Portfolio — 2026",
+        "ku": "پۆرتفۆلیۆ — ٢٠٢٦"
+      },
+      "desc": {
+        "en": "Personal portfolio with a custom design system, GSAP motion and Framer Motion page transitions.",
+        "ku": "پۆرتفۆلیۆی کەسی لەگەڵ دیزاین سیستەمی تایبەت و ئەنیمەیشنی GSAP."
+      },
+      "category": "website",
+      "order": 21,
+      "tags": [
+        "React",
+        "GSAP",
+        "Framer Motion"
+      ]
+    },
+    "asuda-portfolio": {
+      "title": {
+        "en": "Portfolio — 3D Edition",
+        "ku": "پۆرتفۆلیۆ — وەشانی سێ ڕەهەندی"
+      },
+      "desc": {
+        "en": "Creative portfolio with React Three Fiber post-processing, Lenis smooth scroll and shadcn/ui components.",
+        "ku": "پۆرتفۆلیۆی داهێنەرانە بە React Three Fiber، Lenis و shadcn/ui."
+      },
+      "category": "website",
+      "order": 22,
+      "tags": [
+        "React",
+        "Three.js",
+        "shadcn/ui",
+        "Lenis"
+      ]
+    },
+    "portfolio-asuda": {
+      "title": {
+        "en": "Portfolio — Next.js Edition",
+        "ku": "پۆرتفۆلیۆ — وەشانی Next.js"
+      },
+      "desc": {
+        "en": "Portfolio built on Next.js with Three.js scenes, Lottie animations and Swiper galleries.",
+        "ku": "پۆرتفۆلیۆ بە Next.js لەگەڵ دیمەنی Three.js، ئەنیمەیشنی Lottie و گەلەری Swiper."
+      },
+      "category": "website",
+      "order": 23,
+      "tags": [
+        "Next.js",
+        "Three.js",
+        "Lottie",
+        "Swiper"
+      ]
+    },
+    "propoasl-match-perfume": {
+      "title": {
+        "en": "Match Perfumes — Technical Proposal",
+        "ku": "Match Perfumes — پێشنیاری تەکنیکی"
+      },
+      "desc": {
+        "en": "Interactive system-architecture and technical proposal for a perfume retail platform.",
+        "ku": "پێشنیاری تەکنیکی و ئەندازیاری سیستەم بە شێوەی کارلێککەر بۆ پلاتفۆرمی فرۆشتنی بۆن."
+      },
+      "category": "proposal",
+      "order": 24,
+      "tags": [
+        "HTML",
+        "Architecture",
+        "Proposal"
+      ]
+    },
+    "promodex-proposal": {
+      "title": {
+        "en": "Promodex — Client Proposal",
+        "ku": "Promodex — پێشنیاری کڕیار"
+      },
+      "desc": {
+        "en": "Animated, printable client proposal that exports to a polished PDF.",
+        "ku": "پێشنیاری کڕیار بە ئەنیمەیشن، ئامادە بۆ چاپ و دەرکردن بە PDF."
+      },
+      "category": "proposal",
+      "order": 25,
+      "tags": [
+        "React",
+        "Framer Motion",
+        "html2pdf"
+      ]
+    },
+    "package-taybat": {
+      "title": {
+        "en": "Taybat — 30-Day Work Package",
+        "ku": "تەیبەت — پاکێجی کاری ٣٠ ڕۆژ"
+      },
+      "desc": {
+        "en": "Kurdish service-package presentation for a client, with print and PDF export.",
+        "ku": "پێشکەشکردنی پاکێجی خزمەتگوزاری بۆ کڕیار بە کوردی، لەگەڵ چاپ و دەرکردن بە PDF."
+      },
+      "category": "proposal",
+      "order": 26,
+      "tags": [
+        "React",
+        "Framer Motion",
+        "PDF"
+      ]
+    },
+    "ZAS-EDUCATION": {
+      "title": {
+        "en": "EduNova 2.0",
+        "ku": "EduNova 2.0"
+      },
+      "desc": {
+        "en": "Education app rewritten in React Native (Expo Router) with camera, offline SQLite, audio and printing — Android and iOS.",
+        "ku": "ئەپی پەروەردە بە React Native (Expo) لەگەڵ کامێرا، SQLite ـی ئۆفلاین، دەنگ و چاپ — بۆ ئەندرۆید و iOS."
+      },
+      "category": "mobile",
+      "order": 27,
+      "tags": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "SQLite"
+      ],
+      "workdir": "ZAS-EDUCATION-v2"
+    },
+    "edu-nova": {
+      "title": {
+        "en": "EduNova — Flutter",
+        "ku": "EduNova — Flutter"
+      },
+      "desc": {
+        "en": "The original cross-platform EduNova education app, built in Flutter for Android, iOS, web and desktop.",
+        "ku": "وەشانی یەکەمی ئەپی پەروەردەیی EduNova بە Flutter بۆ ئەندرۆید، iOS، وێب و دێسکتۆپ."
+      },
+      "category": "mobile",
+      "recipe": "none",
+      "order": 28,
+      "tags": [
+        "Flutter",
+        "Dart"
+      ]
+    }
+  }
+}

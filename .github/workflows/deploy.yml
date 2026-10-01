@@ -1,0 +1,66 @@
+name: Rebuild showcase
+
+# Rebuilds every day so new repos, commits and screenshots appear on their own,
+# then publishes site/ to the gh-pages branch.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: showcase
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      # Fine-grained personal access token with read-only "Contents" + "Metadata" on all your repos.
+      # Settings → Secrets and variables → Actions → New repository secret → SHOWCASE_TOKEN
+      GH_TOKEN: ${{ secrets.SHOWCASE_TOKEN }}
+      GH_OWNER: ${{ github.repository_owner }}
+      SHOWCASE_REPO: ${{ github.event.repository.name }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Require SHOWCASE_TOKEN
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Add the SHOWCASE_TOKEN secret so private repos can be built."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cache npm downloads
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npm-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: npm-${{ runner.os }}-
+
+      - name: Install tools
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Sync GitHub data
+        run: node scripts/sync-github.mjs
+
+      - name: Build live demos
+        run: node scripts/build-demos.mjs
+
+      - name: Take screenshots
+        run: node scripts/screenshots.mjs
+
+      - name: Publish to gh-pages
+        run: node scripts/deploy.mjs

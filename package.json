@@ -1,0 +1,16 @@
+{
+  "name": "asuda-showcase",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-github.mjs",
+    "demos": "node scripts/build-demos.mjs",
+    "shots": "node scripts/screenshots.mjs",
+    "build": "npm run sync && npm run demos && npm run shots",
+    "serve": "node scripts/serve.mjs",
+    "deploy": "node scripts/deploy.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}
