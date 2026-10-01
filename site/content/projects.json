@@ -1,5 +1,5 @@
 {
-  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, category (system | webapp | website | mobile | proposal), icon, tags (what it is built with), order, hidden.",
+  "_help": "Project cards. Any repo not listed here still appears automatically. Fields: title {en, ku}, category (system | webapp | website | mobile | proposal), icon, platforms (web | mobile | desktop | kiosk — apps only), tags (what it is built with), order, hidden.",
   "projects": {
     "AsudaXoshnaw": {
       "hidden": true
@@ -16,6 +16,10 @@
         "ku": "ZAS Tech Clinic — سیستەمی بەڕێوەبردنی کلینیک"
       },
       "category": "system",
+      "platforms": [
+        "web",
+        "desktop"
+      ],
       "icon": "stethoscope",
       "tags": [
         "React 19",
@@ -32,6 +36,10 @@
         "ku": "ZAS Tech — ئەپی کۆمەڵگەی زیرەک"
       },
       "category": "system",
+      "platforms": [
+        "mobile",
+        "web"
+      ],
       "icon": "building",
       "tags": [
         "React 19",
@@ -47,6 +55,9 @@
         "ku": "پانێڵی بەڕێوەبردنی دانیشتووانی ZAS Tech"
       },
       "category": "system",
+      "platforms": [
+        "web"
+      ],
       "icon": "dashboard",
       "tags": [
         "React",
@@ -62,6 +73,9 @@
         "ku": "هەژماری من — بازاڕی قیست"
       },
       "category": "webapp",
+      "platforms": [
+        "web"
+      ],
       "icon": "cart",
       "tags": [
         "React",
@@ -77,6 +91,9 @@
         "ku": "کلینیکی ئەلیکترۆنی"
       },
       "category": "system",
+      "platforms": [
+        "web"
+      ],
       "icon": "clinic",
       "tags": [
         "React",
@@ -92,6 +109,9 @@
         "ku": "سیستەمی بەڕێوەبردنی کارمەندان"
       },
       "category": "system",
+      "platforms": [
+        "web"
+      ],
       "icon": "users",
       "tags": [
         "Next.js",
@@ -106,6 +126,9 @@
         "ku": "شیکاری ڕیکلامی ساریاس"
       },
       "category": "webapp",
+      "platforms": [
+        "web"
+      ],
       "icon": "chart",
       "tags": [
         "React",
@@ -121,6 +144,9 @@
         "ku": "ڕێبەری کۆمپانیاکانی ئەنجوومەنی بازرگانی هەولێر"
       },
       "category": "webapp",
+      "platforms": [
+        "web"
+      ],
       "icon": "directory",
       "tags": [
         "Node.js",
@@ -136,6 +162,9 @@
         "ku": "Gelato IQ — کیۆسکی داواکاری خۆیی"
       },
       "category": "webapp",
+      "platforms": [
+        "kiosk"
+      ],
       "icon": "icecream",
       "tags": [
         "JavaScript",
@@ -151,6 +180,9 @@
         "ku": "PUBG Arena — پلاتفۆرمی پاڵەوانێتی"
       },
       "category": "webapp",
+      "platforms": [
+        "web"
+      ],
       "icon": "trophy",
       "tags": [
         "Next.js",
@@ -397,6 +429,9 @@
         "ku": "EduNova 2.0"
       },
       "category": "mobile",
+      "platforms": [
+        "mobile"
+      ],
       "icon": "graduation",
       "tags": [
         "React Native",
@@ -412,6 +447,10 @@
         "ku": "EduNova — Flutter"
       },
       "category": "mobile",
+      "platforms": [
+        "mobile",
+        "desktop"
+      ],
       "icon": "graduation",
       "tags": [
         "Flutter",

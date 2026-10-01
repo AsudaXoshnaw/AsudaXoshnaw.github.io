@@ -10,7 +10,7 @@ const I18N = {
     'hero.available': 'Available for new projects', 'hero.t1': 'What we’ve', 'hero.t2': 'built.',
     'hero.cta': 'See the work', 'hero.contact': 'Get in touch',
     'stat.projects': 'Projects', 'stat.commits': 'Commits',
-    'work.title': 'Projects', builtWith: 'Built with',
+    'work.title': 'Projects', builtWith: 'Built with', all: 'All',
     'contact.t1': 'Have a project in mind?', 'contact.t2': 'Let’s build it.',
     email: 'Email me',
   },
@@ -19,21 +19,40 @@ const I18N = {
     'hero.available': 'ئامادەم بۆ پرۆجێکتی نوێ', 'hero.t1': 'ئەوەی', 'hero.t2': 'دروستمان کردووە.',
     'hero.cta': 'کارەکان ببینە', 'hero.contact': 'پەیوەندیم پێوە بکە',
     'stat.projects': 'پرۆجێکت', 'stat.commits': 'کۆمیت',
-    'work.title': 'پرۆجێکتەکان', builtWith: 'دروستکراوە بە',
+    'work.title': 'پرۆجێکتەکان', builtWith: 'دروستکراوە بە', all: 'هەمووی',
     'contact.t1': 'بیرۆکەی پرۆجێکتێکت هەیە؟', 'contact.t2': 'با دروستی بکەین.',
     email: 'ئیمەیڵم بۆ بنێرە',
   },
 };
 
+// applications first, then websites, proposals and designs
 const CATEGORIES = {
   system: { en: 'Systems & dashboards', ku: 'سیستەم و داشبۆرد' },
   webapp: { en: 'Web apps', ku: 'وێب ئەپ' },
-  website: { en: 'Websites', ku: 'وێبسایت' },
   mobile: { en: 'Mobile apps', ku: 'ئەپی مۆبایل' },
+  website: { en: 'Websites', ku: 'وێبسایت' },
   proposal: { en: 'Proposals', ku: 'پێشنیار و پێشکەشکردن' },
   design: { en: 'Figma designs', ku: 'دیزاینەکانی Figma' },
   other: { en: 'Other', ku: 'هیتر' },
 };
+
+// every category belongs to one kind, shown as a badge and used by the filter tabs
+const KINDS = {
+  app: { en: 'Application', ku: 'ئەپڵیکەیشن', plural: { en: 'Applications', ku: 'ئەپڵیکەیشنەکان' }, cats: ['system', 'webapp', 'mobile'] },
+  website: { en: 'Website', ku: 'وێبسایت', plural: { en: 'Websites', ku: 'وێبسایتەکان' }, cats: ['website'] },
+  proposal: { en: 'Proposal', ku: 'پێشنیار', plural: { en: 'Proposals', ku: 'پێشنیارەکان' }, cats: ['proposal'] },
+  design: { en: 'Design', ku: 'دیزاین', plural: { en: 'Designs', ku: 'دیزاینەکان' }, cats: ['design'] },
+  other: { en: 'Project', ku: 'پرۆجێکت', plural: { en: 'Other', ku: 'هیتر' }, cats: ['other'] },
+};
+const kindOf = (category) => Object.keys(KINDS).find((k) => KINDS[k].cats.includes(category)) || 'other';
+
+const PLATFORMS = {
+  web: { en: 'Web', ku: 'وێب', icon: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>' },
+  mobile: { en: 'Mobile', ku: 'مۆبایل', icon: '<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/>' },
+  desktop: { en: 'Desktop', ku: 'دێسکتۆپ', icon: '<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>' },
+  kiosk: { en: 'Kiosk', ku: 'کیۆسک', icon: '<rect x="6" y="2" width="12" height="15" rx="2"/><path d="M12 17v5M8 22h8M10 6h4"/>' },
+};
+let kindFilter = 'all';
 
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -70,6 +89,7 @@ function buildProjects(gh, cfg, figma) {
         title: c.title || prettify(r.name),
         category: c.category || 'other',
         icon: c.icon,
+        platforms: c.platforms || [],
         tags: c.tags || langs.slice(0, 4),
         order: c.order ?? 999,
         hidden: c.hidden || r.empty,
@@ -172,8 +192,32 @@ const techColor = (tag) => {
   return hit ? TECH_COLORS[hit] : '#8d919b';
 };
 
+function renderFilters() {
+  const counts = {};
+  DATA.projects.forEach((p) => { const k = kindOf(p.category); counts[k] = (counts[k] || 0) + 1; });
+  const keys = Object.keys(KINDS).filter((k) => counts[k]);
+  if (!keys.includes(kindFilter)) kindFilter = 'all';
+  $('#filters').innerHTML = [
+    `<button class="filter" type="button" role="tab" data-kind="all" aria-selected="${kindFilter === 'all'}">${esc(t('all'))}<span class="n">${num(DATA.projects.length)}</span></button>`,
+    ...keys.map((k) => `<button class="filter" type="button" role="tab" data-kind="${k}" aria-selected="${kindFilter === k}">${esc(pick(KINDS[k].plural))}<span class="n">${num(counts[k])}</span></button>`),
+  ].join('');
+}
+
+function kindBadge(p) {
+  const kind = kindOf(p.category);
+  const platforms = (p.platforms || []).filter((x) => PLATFORMS[x]);
+  return `
+    <div class="pcard-kind">
+      <span class="kind kind-${kind}">${esc(pick(KINDS[kind]))}</span>
+      ${platforms.length ? `<span class="plats">${platforms.map((x) => `
+        <span class="plat" title="${esc(pick(PLATFORMS[x]))}"><svg viewBox="0 0 24 24" aria-hidden="true">${PLATFORMS[x].icon}</svg>${esc(pick(PLATFORMS[x]))}</span>`).join('')}
+      </span>` : ''}
+    </div>`;
+}
+
 function renderIndex() {
   const groups = Object.keys(CATEGORIES)
+    .filter((key) => kindFilter === 'all' || kindOf(key) === kindFilter)
     .map((key) => ({ key, items: DATA.projects.filter((p) => p.category === key) }))
     .filter((g) => g.items.length);
   let n = 0;
@@ -186,7 +230,10 @@ function renderIndex() {
       <ul class="cards">
         ${g.items.map((p) => `
           <li class="pcard" style="animation-delay:${Math.min(n++, 20) * 30}ms">
-            <span class="pcard-icon" aria-hidden="true"><svg viewBox="0 0 24 24">${ICONS[p.icon] || ICONS[CATEGORY_ICON[p.category]] || ICONS.code}</svg></span>
+            <div class="pcard-top">
+              <span class="pcard-icon" aria-hidden="true"><svg viewBox="0 0 24 24">${ICONS[p.icon] || ICONS[CATEGORY_ICON[p.category]] || ICONS.code}</svg></span>
+              ${kindBadge(p)}
+            </div>
             <h4 class="pcard-title">${esc(pick(p.title))}</h4>
             <p class="pcard-label">${esc(t('builtWith'))}</p>
             <ul class="techs">${p.tags.map((tag) => `<li style="--c:${techColor(tag)}">${esc(tag)}</li>`).join('')}</ul>
@@ -209,10 +256,18 @@ function renderAll() {
   applyI18n();
   renderProfile();
   renderStats();
+  renderFilters();
   renderIndex();
   renderContact();
 }
 
+$('#filters').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-kind]');
+  if (!b) return;
+  kindFilter = b.dataset.kind;
+  $('#filters').querySelectorAll('[data-kind]').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+  renderIndex();
+});
 $('#langBtn').addEventListener('click', () => {
   lang = lang === 'en' ? 'ku' : 'en';
   store.set('lang', lang);
