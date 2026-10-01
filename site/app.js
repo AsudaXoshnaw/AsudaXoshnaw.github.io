@@ -150,6 +150,7 @@ const ICONS = {
   graduation: '<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5M22 10v6"/>',
   figma: '<path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1 0 7H12V2zM12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0zM5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0zM5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>',
   code: '<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>',
+  discount: '<path d="M2 9a3 3 0 0 0 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 0 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="m9 15 6-6M9 9h.01M15 15h.01"/>',
 };
 const CATEGORY_ICON = { system: 'dashboard', webapp: 'layout', website: 'network', mobile: 'graduation', proposal: 'doc', design: 'figma', other: 'code' };
 const CATEGORY_HUE = { system: '#7c8cff', webapp: '#3ddc97', website: '#c8f23a', mobile: '#ff8a5c', proposal: '#f5a524', design: '#a259ff', other: '#8d919b' };

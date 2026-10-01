@@ -492,6 +492,22 @@
         "en": "A quiz app where everyone can join timed question-and-answer games, with special prizes for the winner of each game.",
         "ku": "ئەپڵیکەیشنێکە کە تێیدا یاری پرسیار و وەڵام لە کاتی دیاریکراودا بەڕێوەدەچێت، هەموو کەسێک دەتوانێت بەکاری بهێنێت، و خەڵاتی تایبەت بۆ براوەی هەر یارییەک دادەنرێت."
       }
+    },
+    {
+      "title": {
+        "en": "Discount Card",
+        "ku": "کارتی داشکاندن"
+      },
+      "category": "mobile",
+      "platforms": [
+        "mobile"
+      ],
+      "icon": "discount",
+      "tags": [
+        "Flutter",
+        "Dart"
+      ],
+      "order": 26
     }
   ]
 }
